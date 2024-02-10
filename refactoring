@@ -1,0 +1,27 @@
+def print_array(array):
+    print("###")
+    print(array)
+    print("###")
+
+
+def math_task(data):
+    answer = []
+    # возводим в третью степень
+    for elem in data:
+        answer += [elem ** 3]
+    print_array(answer)
+    
+    # берем остаток от деления на 7
+    for i in range(len(answer)):
+        answer[i] = answer[i] % 7
+    print_array(answer)
+    
+    # прибавляем к остатку изначальный массив
+    for i in range(len(answer)):
+        answer[i] = answer[i] + data[i]
+   print_array(answer)
+    
+    return answer
+
+# Так как test_data уже зашиты в чекер, вызов функции math_task производится без определения test_data здесь
+math_task(test_data)
