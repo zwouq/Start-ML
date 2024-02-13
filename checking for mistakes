@@ -12,7 +12,9 @@ def math_task(data):
     # возвращаем результат
     return answer
 
-print(math_task([1, 4, 5, 9]))
-# math_task(test_data)
+print("###")
+print(math_task(test_data))
+print("###")
+
 # print(math_task([1, 4, 5, 9])) # пример для самопроверки
     

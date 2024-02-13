@@ -19,7 +19,7 @@ def math_task(data):
     # прибавляем к остатку изначальный массив
     for i in range(len(answer)):
         answer[i] = answer[i] + data[i]
-   print_array(answer)
+    print_array(answer)
     
     return answer
 
